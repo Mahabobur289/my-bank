@@ -19,13 +19,29 @@
             <br>
             <input type="password" class="form-control" placeholder="Password" name="" id="">
             <br>
-            <button class="button">Enter</button>
+            <button id="enter" class="button">Enter</button>
 
         </div>
 
 
 
     </div>
+    <div id="transaction">
+        <h1>Hey</h1>
+    </div>
+
+    <script>
+        const loginBtn = document.getElementById("enter");
+        loginBtn.addEventListener("click", function(){
+            const anyWord = document.getElementById("login-area");
+            anyWord.style.display ="none";
+            const anyWord1 = document.getElementById("transaction");
+            anyWord1.style.display ="block";
+
+
+        })
+
+    </script>
     
 </body>
 </html>
