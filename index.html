@@ -27,7 +27,46 @@
 
     </div>
     <div id="transaction">
-        <h1>Hey</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="Deposit status">
+                    <h5>Deposit</h5>
+                    <h2>$<span id="currentMoney">000</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class = "Withdraw status">
+                    <h5>Withdraw</h5>
+                    <h2>$000</h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="Balance status">
+                    <h5>Balance</h5>
+                    <h2>$000</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="boder">
+                    <h4>Deposit</h4>
+                <input id="amount" type="text" class="form-control" placeholder="Enter your deposit">
+                <br>
+                <button id="addDeposit" class="btn btn-success">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+               <div class="boder">
+                <h4>Withdraw</h4>
+                <input type="text"class="form-control" placeholder="Need money just Withdraw">
+                <br>
+                <button class="btn btn-success">Withdraw</button>
+               </div>
+            </div>
+        </div>
+
     </div>
 
     <script>
@@ -37,6 +76,20 @@
             anyWord.style.display ="none";
             const anyWord1 = document.getElementById("transaction");
             anyWord1.style.display ="block";
+
+        })
+
+        const anyWord4 = document.getElementById("addDeposit");
+        anyWord4.addEventListener("click", function(){ 
+            const anyWord5 = document.getElementById("amount").value;
+            const anyWord6 = parseFloat(anyWord5);
+
+            const anyWord7 = document.getElementById("currentMoney").innerText;
+            const anyWord0 = parseFloat(anyWord7);
+            const total = anyWord6 + anyWord0 ;
+            document.getElementById("currentMoney").innerText = total;
+            document.getElementById("amount").value = "";
+
 
 
         })

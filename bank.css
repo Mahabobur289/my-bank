@@ -25,3 +25,21 @@ body{
     display: none;
 
 }
+.Deposit{
+    background-color: slateblue;
+    
+}
+.Withdraw{
+    background-color: lightcoral;
+    
+}
+.Balance{
+    background-color: orangered;
+    
+}
+.status{
+    margin: 0 20px;
+    padding: 20px;
+    color: wheat;
+    border-radius: 10px;
+}
